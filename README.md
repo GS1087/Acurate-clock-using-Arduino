@@ -1,6 +1,10 @@
 # Acurate-clock-using-Arduino
 An accurate clock can be made with Arduino that has a 16x2 LCD, display, and buttons, without an RTC module. The Processing script reads the milliseconds sent from the Arduino and compares them to the elapsed milliseconds.
 
+
+
+
+
 Abstract
 This abstract outlines the development of a functional clock using an Arduino Uno, without the need for an external Real-Time Clock (RTC) module. While convenient, RTC modules add cost and complexity to the project. This project explores achieving reasonable timekeeping accuracy by leveraging the Arduino's internal clock. However, the internal clock's inherent drift can cause time discrepancies over extended periods.
 To address this limitation, the project implements a two-pronged approach. First, a method is developed to evaluate the internal clock's drift. This involves comparing the Arduino's millis() function, which tracks milliseconds elapsed since power-up, with a known accurate reference time source. A computer clock synchronized with an internet time server could serve as this reference. By comparing these time values over a period, the project quantifies the drift, expressed as the time difference gained or lost per hour (e.g., +2 seconds per hour).
@@ -8,8 +12,10 @@ Secondly, the project implements a drift correction algorithm based on the measu
 Finally, the Arduino code utilizes the adjusted millis() function to track time (hours, minutes, seconds). The code then formats the final time and displays it on an output device like an LCD screen. This project demonstrates a practical approach to building a reasonably accurate clock with an Arduino. It showcases a method to compensate for the internal clock's drift without relying on additional hardware modules, potentially making the project more cost-effective and simpler to build.
 
 CHAPTER 1.  TITLE : Accurate Clock with Arduino
+![image](https://github.com/GS1087/Acurate-clock-using-Arduino/assets/149863067/569a19f3-200a-4847-a813-8aaeba4f6336)
 
- .                                                            Fig: 1.1 Accurate Arduino Clock
+ .                                                           
+ Fig: 1.1 Accurate Arduino Clock
 
 
 
